@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source /usr/share/yunohost/helpers
+
+#=================================================
+# REMOVE THE NGINX CONFIGURATION
+#=================================================
+ynh_script_progression --message="Removing nginx web server configuration..." --weight=1
+
+ynh_remove_nginx_config
